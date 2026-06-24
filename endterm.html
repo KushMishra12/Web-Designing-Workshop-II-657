@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd Checker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Even or Odd Checker</h2>
+
+        <input type="number" id="number" placeholder="Enter a number">
+
+        <button onclick="checkNumber()">Check</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let num = document.getElementById("number").value;
+            let result = document.getElementById("result");
+
+            if (num === "") {
+                result.innerHTML = "Please enter a number!";
+            }
+            else if (num % 2 === 0) {
+                result.innerHTML = num + " is an Even Number";
+            }
+            else {
+                result.innerHTML = num + " is an Odd Number";
+            }
+        }
+    </script>
+
+</body>
+</html>
