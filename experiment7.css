@@ -1,0 +1,16 @@
+body {   margin: 0;   font-family: Arial, Helvetica, sans-serif;   background-color: #6099d2; 
+} 
+.container {   text-align: center;   padding: 40px 20px; 
+} 
+ 
+h1 {   margin-bottom: 30px;   color: #333; 
+} 
+ 
+.card { 
+  background-color: #	; 
+  width: 280px;   margin: 20px auto;   padding: 20px;   border-radius: 10px;   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+.card h2 {   margin-bottom: 10px;    color: #222; 
+} 
+.card p {   margin: 5px 0;   color: #555; 
+}  
